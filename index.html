@@ -7,7 +7,8 @@
   <title>Café Monona'S</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-
+<!-- Asegúrate de incluir Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
  <style>
   .padingx {
   padding-top: 120px !important;
@@ -15,25 +16,21 @@
  .padingProd {
   padding-top: 30px !important;
 }
+
+
    
     nav {
       /*       Ajusta la imagen para cubrir el navbar */
-    background-color: #e8941f;
+    background-color: 	#ede0c8;
 
     }
    
-.bg-image-navbar {
-    background-image: url('assets/img/elemento-cafe-vintage-dibujado-mano_188398-551.avif'); /* Cambia por la ruta real */
-    background-size: cover;       /* Ajusta la imagen para cubrir el navbar */
-    background-position: center;  /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que se repita */
-    height: 100px;                /* Altura del navbar, ajustable */
-  }
+.container a{
+  font-weight: 500; /* semi-bold */
+  color: #a87b1a;
+}
 
-  .bg-image-navbar .navbar-brand,
-  .bg-image-navbar .nav-link {
-    color: white !important; /* Asegura que el texto sea visible sobre la imagen */
-  }
+  
 
   .logo-nav {
   border-radius: 50%;             /* Hace la imagen redonda */
@@ -46,14 +43,50 @@
     object-fit: cover; /* rellena sin deformar */
   }
 
- .card {
-    max-height: 180px; /* ajusta según lo que desees */
-  }
+.filtro-btn {
+  font-weight: 500;
+  color: #a87b1a;
+  border-color: #e0d5c2;
+  background-color: transparent;
+}
 
-  .card img {
-    object-fit: cover;
-    height: 100%;
-  }
+.filtro-btn:hover,
+.filtro-btn:focus {
+  color: white;
+  background-color: #e0d5c2;
+  border-color: #debea2;
+}
+
+.filtro-btn.active,
+.filtro-btn:active {
+  color: white;
+  background-color: #eecaaa;
+  border-color: #A1866F;
+}
+
+.card {
+  max-height: 180px;
+  border-radius: 0.6rem;
+  padding: 10px;
+  overflow: hidden;
+  background-color: #f5eedd; /* un tono más claro que #ede0c8 */
+    border: none;
+    color: #5A4B3F; /* tono café suave para texto general */
+}
+
+.card-title {
+  color: #a87b1a; /* combina con el navbar */
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.card .precio{
+   font-weight: bold;
+  font-size: 1rem;
+  color: #a87b1a;
+  margin-top: 0.5rem;
+}
+
+
   .card-body {
     overflow: hidden;
   }
@@ -63,6 +96,16 @@
   .card {
     max-height: 140px; /* cambia este valor según lo que necesites en móvil */
   }
+
+.card-body h5 {
+  font-size: 1rem;
+  margin-bottom: 0.25rem; /* reduce espacio debajo del título */
+}
+
+.card-body p {
+  font-size: 0.875rem;
+  margin-bottom: 0.25rem; /* menos espacio entre párrafos */
+}
 }
     /* Elimina la línea blanca debajo de los íconos de redes sociales */
     footer a {
@@ -74,7 +117,7 @@
       display: inline-block;
     }
     footer {
-        background-color: #e8941f!important;
+        background-color: #E8DCC4!important;
     }
 
     /* Opcional: Efecto hover para íconos */
@@ -160,7 +203,7 @@
     <h2 class="text-center mb-4 text-brown">Nuestros Servicios</h2>
     <div class="row text-center">
       
-      <div class="col-md-4 mb-4">
+      <div class="col-md-3 mb-3">
         <div class="card h-100 shadow border-0">
           <div class="card-body">
             <i class="bi bi-cup-hot-fill text-brown mb-3" style="font-size: 2.5rem;"></i>
@@ -170,21 +213,31 @@
         </div>
       </div>
       
-      <div class="col-md-4 mb-4">
+      <div class="col-md-3 mb-3">
         <div class="card h-100 shadow border-0">
           <div class="card-body">
-            <i class="bi bi-cake-fill text-brown mb-3" style="font-size: 2.5rem;"></i>
+            <i class="fa-solid fa-cake-candles text-brown mb-3" style="font-size: 2.5rem;"></i>
             <h5 class="card-title">Pastelería Casera</h5>
             <p class="card-text">Variedad de tortas, galletas y postres frescos hechos en casa.</p>
           </div>
         </div>
       </div>
       
-      <div class="col-md-4 mb-4">
+      <div class="col-md-3 mb-3">
         <div class="card h-100 shadow border-0">
           <div class="card-body">
             <i class="bi bi-house-heart-fill text-brown mb-3" style="font-size: 2.5rem;"></i>
             <h5 class="card-title">Ambiente Acogedor</h5>
+            <p class="card-text">Un espacio cómodo y cálido ideal para reuniones o relajarte.</p>
+          </div>
+        </div>
+      </div>
+
+       <div class="col-md-3 mb-3">
+        <div class="card h-100 shadow border-0">
+          <div class="card-body">
+          <i class="fas fa-paw text-brown mb-3" style="font-size: 2.5rem;"></i>
+            <h5 class="card-title">Cafeteria apta para mascotas</h5>
             <p class="card-text">Un espacio cómodo y cálido ideal para reuniones o relajarte.</p>
           </div>
         </div>
@@ -198,7 +251,7 @@
 <section id="productos" class="  py-5 bg-light padingx">
   <div class="container">
 
-    <h2 class="text-center mb-4 text-brown">Nuestros Productos</h2>
+    <h2 class="text-center mb-4 text-brown">NUESTROS PRODUCTOS</h2>
     <div class="d-flex flex-wrap gap-2 mb-4">
    <button class="btn btn-outline-primary filtro-btn" data-filtro="Todos">Todos</button>
   <button class="btn btn-outline-primary filtro-btn" data-filtro="Desayunos">Desayunos</button>
@@ -211,115 +264,115 @@
   <div class="container ">
     
     <!-- Grupo 1 -->
-     <h3  class="mt-4 ">DESAYUNOS</h3>
+     <h4  class="mt-4 ">DESAYUNOS</h4>
     <div class="grupo-producto row row-cols-1 row-cols-md-2 g-4" data-categoria="Desayunos">
      
       <div class="col">
-        <div class="card h-100 d-flex flex-row">
-          <img src="assets/img/pieLimonCafe.jpg" class="img-fluid rounded-start" style="width: 40%;" alt="Pie Limón">
-          <div class="card-body">
+        <div class="card h-100 shadow d-flex flex-row">
+          <img src="assets/img/pieLimonCafe.jpg" class="img-fluid rounded" style="width: 40%;" alt="Pie Limón">
+          <div class="card-body ">
             <h5 class="card-title">Pie de Limón</h5>
-            <p class="card-text">Delicioso pie de limón casero con base de galleta y un toque de café.</p>
-            <p class="card-text"><small class="text-muted">Última actualización: hace 3 minutos</small></p>
+            <p class="card-text">Delicioso pie de limón casero.</p>
+            <p class="precio">$12990</p>
           </div>
         </div>
       </div>
 
       <div class="col">
-        <div class="card h-100 d-flex flex-row">
-           <img src="assets/img/pieLimonCafe.jpg" class="img-fluid rounded-start" style="width: 40%;" alt="Pie Limón">
+        <div class="card h-100 shadow d-flex flex-row">
+           <img src="assets/img/pieLimonCafe.jpg" class="img-fluid rounded" style="width: 40%;" alt="Pie Limón">
           <div class="card-body">
             <h5 class="card-title">Pie de Limón</h5>
-            <p class="card-text">Delicioso pie de limón casero con base de galleta y un toque de café.</p>
-            <p class="card-text"><small class="text-muted">Última actualización: hace 3 minutos</small></p>
+            <p class="card-text">Delicioso pie de limón casero con base de galleta.</p>
+            <p class="precio">$12990</p>
           </div>
         </div>
       </div>
     </div>
 
     <!-- Grupo 2 -->
-    <h3 id="" class="mt-5 ">SANDWICHES</h3>
+    <h4 id="" class="mt-5 ">SANDWICHES</h4>
     <div class="grupo-producto row row-cols-1 row-cols-md-2 g-4" data-categoria="Sandwiches">
       <div class="col">
-        <div class="card h-100 d-flex flex-row">
-          <img src="assets/img/sandwich.jpg" class="img-fluid rounded-start" style="width: 40%;" alt="Torta Especial">
+        <div class="card h-100 shadow d-flex flex-row">
+          <img src="assets/img/sandwich.jpg" class="img-fluid rounded" style="width: 40%;" alt="Torta Especial">
           <div class="card-body">
             <h5 class="card-title">Torta Especial</h5>
             <p class="card-text">Perfecta para celebraciones y momentos especiales.</p>
-            <p class="card-text"><small class="text-muted">Última actualización: hace 10 minutos</small></p>
+            <p class="precio">$12990</p>
           </div>
         </div>
       </div>
 
       <div class="col">
-        <div class="card h-100 d-flex flex-row">
-          <img src="assets/img/sandwich.jpg" class="img-fluid rounded-start" style="width: 40%;" alt="Torta Tradicional">
+        <div class="card h-100 shadow d-flex flex-row">
+          <img src="assets/img/sandwich.jpg" class="img-fluid rounded" style="width: 40%;" alt="Torta Tradicional">
           <div class="card-body">
             <h5 class="card-title">Torta Tradicional</h5>
-            <p class="card-text">Sabor clásico que nunca falla. Ideal para acompañar un café.</p>
-            <p class="card-text"><small class="text-muted">Última actualización: hace 15 minutos</small></p>
+            <p class="card-text">Sabor clásico que nunca falla.</p>
+           <p class="precio">$12990</p>
           </div>
         </div>
       </div>
       <div class="col">
-        <div class="card h-100 d-flex flex-row">
-          <img src="assets/img/sandwich.jpg" class="img-fluid rounded-start" style="width: 40%;" alt="Torta Tradicional">
+        <div class="card h-100 shadow d-flex flex-row">
+          <img src="assets/img/sandwich.jpg" class="img-fluid rounded" style="width: 40%;" alt="Torta Tradicional">
           <div class="card-body">
             <h5 class="card-title">Torta Tradicional</h5>
-            <p class="card-text">Sabor clásico que nunca falla. Ideal para acompañar un café.</p>
-            <p class="card-text"><small class="text-muted">Última actualización: hace 15 minutos</small></p>
+            <p class="card-text">Sabor clásico que nunca falla.</p>
+            <p class="precio">$12990</p>
           </div>
         </div>
       </div>
     </div>
 
     <!-- Grupo 3 -->
-    <h3 id="PasteleriaTrozo" class="mt-5 ">PASTELERIA TROZO</h3>
+    <h4 id="PasteleriaTrozo" class="mt-5 ">PASTELERIA TROZO</h4>
     <div class="grupo-producto row row-cols-1 row-cols-md-2 g-4" data-categoria="Pasteleria Trozo">
       <div class="col">
-        <div class="card h-100 d-flex flex-row">
-          <img src="assets/img/rolloCanela.jpg" class="img-fluid rounded-start" style="width: 40%;" alt="Torta Especial">
+        <div class="card h-100 shadow d-flex flex-row">
+          <img src="assets/img/rolloCanela.jpg" class="img-fluid rounded" style="width: 40%;" alt="Torta Especial">
           <div class="card-body">
             <h5 class="card-title">Torta Especial</h5>
             <p class="card-text">Perfecta para celebraciones y momentos especiales.</p>
-            <p class="card-text"><small class="text-muted">Última actualización: hace 10 minutos</small></p>
+            <p class="precio">$12990</p>
           </div>
         </div>
       </div>
 
       <div class="col">
-        <div class="card h-100 d-flex flex-row">
-          <img src="assets/img/pieLimonCafe.jpg" class="img-fluid rounded-start" style="width: 40%;" alt="Torta Tradicional">
+        <div class="card h-100 shadow d-flex flex-row">
+          <img src="assets/img/pieLimonCafe.jpg" class="img-fluid rounded" style="width: 40%;" alt="Torta Tradicional">
           <div class="card-body">
             <h5 class="card-title">Torta Tradicional</h5>
-            <p class="card-text">Sabor clásico que nunca falla. Ideal para acompañar un café.</p>
-            <p class="card-text"><small class="text-muted">Última actualización: hace 15 minutos</small></p>
+            <p class="card-text">Sabor clásico que nunca falla.</p>
+            <p class="precio">$12990</p>
           </div>
         </div>
       </div>
     </div>
 
      <!-- Grupo 4 -->
-    <h3 id="TortasTrozo" class="mt-5 ">TORTAS TROZO</h3>
+    <h4 id="TortasTrozo" class="mt-5 ">TORTAS TROZO</h4>
     <div class="grupo-producto row row-cols-1 row-cols-md-2 g-4" data-categoria="Tortas Trozo">
       <div class="col">
-        <div class="card h-100 d-flex flex-row">
-          <img src="assets/img/tortaCasera.jpg" class="img-fluid rounded-start" style="width: 40%;" alt="Torta Especial">
+        <div class="card h-100 shadow d-flex flex-row">
+          <img src="assets/img/tortaCasera.jpg" class="img-fluid rounded" style="width: 40%;" alt="Torta Especial">
           <div class="card-body">
             <h5 class="card-title">Torta Especial</h5>
             <p class="card-text">Perfecta para celebraciones y momentos especiales.</p>
-            <p class="card-text"><small class="text-muted">Última actualización: hace 10 minutos</small></p>
+            <p class="precio">$12990</p>
           </div>
         </div>
       </div>
 
       <div class="col">
-        <div class="card h-100 d-flex flex-row">
-          <img src="assets/img/tortaCasera.jpg" class="img-fluid rounded-start" style="width: 40%;" alt="Torta Tradicional">
+        <div class="card h-100 shadow d-flex flex-row">
+          <img src="assets/img/tortaCasera.jpg" class="img-fluid rounded" style="width: 40%;" alt="Torta Tradicional">
           <div class="card-body">
             <h5 class="card-title">Torta Tradicional</h5>
-            <p class="card-text">Sabor clásico que nunca falla. Ideal para acompañar un café.</p>
-            <p class="card-text"><small class="text-muted">Última actualización: hace 15 minutos</small></p>
+            <p class="card-text">Sabor clásico, ideal para acompañar un café.</p>
+            <p class="precio">$12990</p>
           </div>
         </div>
       </div>
@@ -444,7 +497,7 @@ document.querySelectorAll('.filtro-btn').forEach(btn => {
     const filtro = btn.getAttribute('data-filtro');
 
     // Recorremos todos los títulos <h3> y su siguiente grupo de productos
-    document.querySelectorAll('h3').forEach(header => {
+    document.querySelectorAll('h4').forEach(header => {
       const grupo = header.nextElementSibling;
 
       // Aseguramos que el siguiente hermano sea un grupo de productos
