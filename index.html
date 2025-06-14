@@ -24,6 +24,19 @@
     background-color: 	#ede0c8;
 
     }
+
+    nav .navRedes1{
+      text-decoration: none !important;
+      color: #a87b1a;
+    }
+    nav .navRedes2{
+      text-decoration: none;
+      display: inline-block;
+    }
+    nav .navRedes1:hover .navRedes2{
+     color: white; /* Cambia a tu color preferido */
+      transition: color 0.3s ease;
+    }
    
 .container a{
   font-weight: 500; /* semi-bold */
@@ -137,8 +150,24 @@
       <div class="container">
           <a class="navbar-brand d-flex align-items-center" href="#">
          <img src="assets/img/logo.png" alt="Logo" width="90" height="90" class="me-2 logo-nav">
-      
          </a>
+
+         <div class="mb-3 pt-4">
+        <!-- NAVBAR REDES SOCIALES -->
+        
+      <a href="https://facebook.com" target="_blank" class=" mx-2 navRedes1">
+        <i class="bi bi-facebook navRedes2" style="font-size: 1.5rem;"></i>
+      </a>
+
+      <a href="https://instagram.com" target="_blank" class=" mx-3 navRedes1">
+        <i class="bi bi-instagram navRedes2" style="font-size: 1.5rem;"></i>
+      </a>
+      
+      <a href="https://wa.me/56912345678" target="_blank" class=" mx-2 navRedes1">
+        <i class="bi bi-whatsapp navRedes2" style="font-size: 1.5rem;"></i>
+      </a>
+       
+    </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido" aria-controls="navbarContenido" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
