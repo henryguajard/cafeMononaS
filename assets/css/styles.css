@@ -1,0 +1,200 @@
+.padingx {
+  padding-top: 120px !important;
+}
+ .padingProd {
+  padding-top: 30px !important;
+}
+
+    nav {
+      
+    background-color: 	#ede0c8;
+
+    }
+
+    nav .navRedes1{
+      text-decoration: none !important;
+      color: #a87b1a;
+    }
+    nav .navRedes2{
+      text-decoration: none;
+      display: inline-block;
+    }
+    nav .navRedes1:hover .navRedes2{
+     color: white; 
+      transition: color 0.3s ease;
+    }
+   
+.container a{
+  font-weight: 500; 
+  color: #a87b1a;
+}
+
+  
+
+  .logo-nav {
+  border-radius: 50%;             
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); 
+  object-fit: cover;             
+}
+
+.carousel-item img {
+    height: 600px; 
+    object-fit: cover; 
+  }
+
+.filtro-btn {
+  font-weight: 500;
+  color: #a87b1a;
+  border-color: #e0d5c2;
+  background-color: transparent;
+}
+
+.filtro-btn:hover,
+.filtro-btn:focus {
+  color: white;
+  background-color: #e0d5c2;
+  border-color: #debea2;
+}
+
+.filtro-btn.active,
+.filtro-btn:active {
+  color: white;
+  background-color: #eecaaa;
+  border-color: #A1866F;
+}
+
+.card {
+  max-height: 180px;
+  border-radius: 0.6rem;
+  padding: 10px;
+  overflow: hidden;
+  background-color: #f5eedd; 
+    border: none;
+    color: #5A4B3F; 
+}
+
+.card-title {
+  color: #a87b1a; 
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.card .precio{
+   font-weight: bold;
+  font-size: 1rem;
+  color: #a87b1a;
+  margin-top: 0.5rem;
+}
+
+
+  .card-body {
+    overflow: hidden;
+  }
+
+  .card-servicio {
+  max-height: 280px;
+ border-radius: 0.6rem;
+ border: none;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-servicio::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* oscurecer fondo para que el texto resalte */
+  z-index: 1;
+}
+
+.card-servicio .card-body {
+  position: relative;
+  z-index: 2;
+}
+
+/* Ejemplo por cada card */
+.card-servicio.cafe {
+  background-image: url('https://cafecultura.cl/cdn/shop/articles/8.png?v=1742322824');
+}
+
+.card-servicio.pasteleria {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTenrFQ9Q6y3Orx-cPWhVVWiNSQE9_YduzAZw&s');
+}
+.card-servicio.ambiente {
+  background-image: url('/assets/img/local.jpg');
+}
+.card-servicio.mascota{
+    background-image: url('https://lapanerarosa.cl/wp-content/uploads/2024/10/pet-friendly-scaled.jpg');  
+}
+
+  /* Media query para móviles */
+@media (max-width: 768px) {
+
+
+
+  .card {
+    max-height: 140px; 
+    
+  }
+ 
+  .card .cardMov{
+  width: 95% !important;
+  }
+
+.card-body h5 {
+  font-size: 1rem;
+  margin-bottom: 0.25rem; 
+}
+
+.card-body p {
+  font-size: 0.875rem;
+  margin-bottom: 0.25rem; 
+}
+
+      /* Solo afecta a las cards del carrusel */
+  .card-servicio {
+    max-height: none; /* Anula el límite de altura */
+    height: auto;
+  }
+
+  .card-servicio .card-body {
+    padding: 1rem;
+  }
+
+  .card-servicio h5 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .card-servicio p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Asegura que los íconos no queden recortados */
+  .card-servicio i {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+
+}
+   
+    footer a {
+      text-decoration: none !important;
+    }
+
+    footer a i {
+      text-decoration: none;
+      display: inline-block;
+    }
+    footer {
+        background-color: #E8DCC4!important;
+    }
+
+    footer a:hover i {
+      color: #a87b1a; 
+      transition: color 0.3s ease;
+    }
