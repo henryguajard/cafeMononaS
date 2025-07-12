@@ -156,7 +156,7 @@
       /* Solo afecta a las cards del carrusel */
   .card-servicio {
     max-height: none; /* Anula el límite de altura */
-    height: 200px;
+    height: 350px !important;
   }
 
   .card-servicio .card-body {
@@ -164,7 +164,7 @@
   }
 
   .card-servicio h5 {
-    font-size: 1.1rem;
+    font-size: 2.1rem;
     margin-bottom: 0.5rem;
   }
 
