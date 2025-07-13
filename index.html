@@ -345,7 +345,27 @@
 
 
 <!-- FIN PRODUCTOS -->
+<!-- INSTAGRAM -->
+<section class="container my-5 ">
+  <div class="text-center mb-4">
+    <h2 class="fw-bold">Galería de Instagram</h2>
+    <p class="text-muted">Sígueme para ver más proyectos y novedades</p>
+  </div>
 
+  <div class="ratio ratio-1x1">
+    <!-- LightWidget WIDGET -->
+    <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+    <iframe 
+      src="//lightwidget.com/widgets/cb95ce87ab795033900c44402f1d1f38.html" 
+      scrolling="no" 
+      allowtransparency="true" 
+      class="lightwidget-widget" 
+      style="border:0; overflow:hidden; width:100%; height:100%;">
+    </iframe>
+  </div>
+</section>
+
+<!-- FIN INSTAGRAM -->
 <!-- UBICACION -->
 <section id="ubicacion" class=" padingx py-5 bg-light">
   <div class="container">
@@ -441,47 +461,7 @@
   </div>
 </footer>
 
-<script>
-
-document.querySelectorAll('.nav-link').forEach(link => {
-    link.addEventListener('click', () => {
-      const navbarCollapse = document.querySelector('.navbar-collapse');
-      if (navbarCollapse.classList.contains('show')) {
-        new bootstrap.Collapse(navbarCollapse).hide();
-
-   }
-    });
-  });
-
-
-document.querySelectorAll('.filtro-btn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const filtro = btn.getAttribute('data-filtro');
-
-    // Recorremos todos los títulos <h3> y su siguiente grupo de productos
-    document.querySelectorAll('h4').forEach(header => {
-      const grupo = header.nextElementSibling;
-
-      // Aseguramos que el siguiente hermano sea un grupo de productos
-      if (grupo && grupo.classList.contains('grupo-producto')) {
-        const categoria = grupo.getAttribute('data-categoria');
-
-        // Mostramos u ocultamos según el filtro
-        if (filtro === 'Todos' || filtro === categoria) {
-          header.style.display = 'block';
-          grupo.style.display = 'flex'; // o 'block' si usas diseño vertical
-        } else {
-          header.style.display = 'none';
-          grupo.style.display = 'none';
-        }
-      }
-    });
-     // 🔵 Marcar visualmente el botón seleccionado
-    document.querySelectorAll('.filtro-btn').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-  });
-});
-</script>
+  <script defer src="assets/javascript/nav.js"></script>
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>

@@ -123,7 +123,7 @@
   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTenrFQ9Q6y3Orx-cPWhVVWiNSQE9_YduzAZw&s');
 }
 .card-servicio.ambiente {
-  background-image: url('/assets/img/local.jpg');
+  background-image: url('../img/local.jpg');
 }
 .card-servicio.mascota{
     background-image: url('https://lapanerarosa.cl/wp-content/uploads/2024/10/pet-friendly-scaled.jpg');  
