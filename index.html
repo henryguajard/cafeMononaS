@@ -45,6 +45,9 @@
         <div class="collapse navbar-collapse" id="navbarContenido">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
+              <a class="nav-link" href="#quienes-somos">QUIENES SOMOS</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#servicios">SERVICIOS</a>
             </li>
              <li class="nav-item">
@@ -64,37 +67,91 @@
 
   <!-- CONTENIDO PRINCIPAL -->
   <main class=" ">
-<!-- SLIDER A PANTALLA COMPLETA -->
-<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" style="margin: 0; padding: 0;">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-  </div>
-
+<!-- SLIDER CON BACKGROUND-IMAGE, OVERLAY Y TEXTO CENTRADO -->
+<div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
   <div class="carousel-inner">
+    
     <div class="carousel-item active">
-      <img src="assets/img/carrusel.jpg" class="d-block w-100" style="height: 100vh; object-fit: cover;" alt="Local">
-      <div class="carousel-caption d-none d-md-block">
-        <!-- texto opcional -->
+      <div class="slider-img" style="background-image: url('assets/img/local.jpg');">
+        <div class="overlay"></div>
+        <div class="slider-content text-white text-center">
+          <h1>Bienvenidos</h1>
+          <p>Tu local de confianza</p>
+        </div>
       </div>
     </div>
+
     <div class="carousel-item">
-      <img src="assets/img/carrusel.jpg" class="d-block w-100" style="height: 100vh; object-fit: cover;" alt="Carrusel">
-      <div class="carousel-caption d-none d-md-block">
-        <!-- texto opcional -->
+      <div class="slider-img" style="background-image: url('assets/img/carrusel.jpg');">
+        <div class="overlay"></div>
+        <div class="slider-content text-white text-center">
+          <h1>Calidad y Servicio</h1>
+          <p>Conócenos más</p>
+        </div>
       </div>
     </div>
+
   </div>
 
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="carousel-control-prev-icon"></span>
     <span class="visually-hidden">Anterior</span>
   </button>
   <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="carousel-control-next-icon"></span>
     <span class="visually-hidden">Siguiente</span>
   </button>
 </div>
+
+<section id="quienes-somos" class="padingx py-5 bg-light">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="display-5 fw-bold">¿Quiénes somos?</h2>
+      <p class="lead">En Cafetería Mononas, cada detalle refleja nuestra esencia familiar y amor por lo que hacemos.</p>
+    </div>
+
+    <div class="row row align-items-center mb-5">
+      <!-- Imagen del equipo -->
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <img src="assets/img/nuestroEquipo.jpg" alt="Nuestro equipo" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-lg-6 mb-4">
+        <h4 class="fw-semibold">Nuestra filosofía</h4>
+        <p>
+          En nuestra cafetería, establecemos reglas claras para asegurar una experiencia memorable y armoniosa. No se trata solo de normas, sino de preservar la pasión y respeto por nuestras tradiciones. Cada taza de café refleja sabores del campo y calidad en cada detalle.
+        </p>
+      </div>
+
+      <div class="col-lg-6 mb-4">
+        <h4 class="fw-semibold">Cultura y tradiciones</h4>
+        <p>
+          Al seguir nuestras políticas, contribuyes a mantener el orden, la calidez y la autenticidad del lugar. Nos esforzamos para que cada cliente se sienta como en casa, rodeado de una atmósfera familiar y acogedora.
+        </p>
+      </div>
+    </div>
+
+    <hr class="my-5">
+
+    <div class="row">
+      <div class="col">
+        <h4 class="fw-semibold">💳 Políticas de pedidos y pagos</h4>
+        <p>
+          Nuestro proceso de atención es transparente y fácil:
+        </p>
+        <ul>
+          <li>✔️ Contamos con una carta visible con todos los productos y precios.</li>
+          
+        </ul>
+        <a class=" btn-ver-carta" href="#productos"> <i class="fas fa-utensils"></i> Ver carta </a>
+        <p>
+          Nos esforzamos por ofrecer calidad en cada preparación y un ambiente donde puedas relajarte y disfrutar tu bebida favorita.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
     <h2 id="inicio">Bienvenido</h2>
 <!-- SERVICIOS -->
 <section id="servicios" class="padingx py-5 bg-light">
@@ -215,11 +272,11 @@
 
     <h2 class="text-center mb-4 text-brown">NUESTROS PRODUCTOS</h2>
     <div class="d-flex flex-wrap gap-2 mb-4">
-   <button class="btn btn-outline-primary filtro-btn" data-filtro="Todos">Todos</button>
-  <button class="btn btn-outline-primary filtro-btn" data-filtro="Desayunos">Desayunos</button>
-  <button class="btn btn-outline-primary filtro-btn" data-filtro="Sandwiches">Sandwiches</button>
-  <button class="btn btn-outline-primary filtro-btn" data-filtro="Pasteleria Trozo">Pasteleria Trozo</button>
-  <button class="btn btn-outline-primary filtro-btn" data-filtro="Tortas Trozo">Tortas Trozo</button>
+   <button class="btn btn-outline filtro-btn" data-filtro="Todos">Todos</button>
+  <button class="btn btn-outline filtro-btn" data-filtro="Desayunos">Desayunos</button>
+  <button class="btn btn-outline filtro-btn" data-filtro="Sandwiches">Sandwiches</button>
+  <button class="btn btn-outline filtro-btn" data-filtro="Pasteleria Trozo">Pasteleria Trozo</button>
+  <button class="btn btn-outline filtro-btn" data-filtro="Tortas Trozo">Tortas Trozo</button>
 </div>
     
     <section>

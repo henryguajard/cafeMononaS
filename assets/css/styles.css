@@ -7,7 +7,10 @@
 
     nav {
       
-    background-color: 	#ede0c8;
+  background-color: rgba(237, 224, 200, 0.7); /* Color con transparencia */
+  backdrop-filter: blur(5px); /*  efecto vidrio esmerilado */
+  -webkit-backdrop-filter: blur(5px); /* Soporte para Safari */
+  transition: background-color 0.3s ease;
 
     }
 
@@ -28,8 +31,6 @@
   font-weight: 500; 
   color: #a87b1a;
 }
-
-  
 
   .logo-nav {
   border-radius: 50%;             
@@ -85,7 +86,6 @@
   margin-top: 0.5rem;
 }
 
-
   .card-body {
     overflow: hidden;
   }
@@ -132,8 +132,11 @@
   /* Media query para móviles */
 @media (max-width: 768px) {
 
-
-
+.btn-ver-carta {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
   .card {
     max-height: 140px; 
     
@@ -180,6 +183,73 @@
   }
 
 
+}
+
+.slider-img {
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Cambia la opacidad aquí */
+  z-index: 1;
+}
+
+.slider-content {
+ position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 2rem;
+  background-color: rgba(237, 224, 200, 0.1); /* Color con transparencia */
+  backdrop-filter: blur(5px); /* Efecto vidrio esmerilado */
+  -webkit-backdrop-filter: blur(5px); /* Compatibilidad con Safari */
+  border-radius: 12px; /* Opcional: bordes redondeados */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Opcional: sombra suave */
+  transition: background-color 0.3s ease;
+}
+
+.slider-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.slider-content p {
+  font-size: 1.5rem;
+}
+#quienes-somos ul li {
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+}
+
+.btn-ver-carta {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #ede0c8;
+  border-radius: 8px;
+  background-color: rgba(237, 224, 200, 0.2); /* Semitransparente */
+  color: #333;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(3px);
+}
+
+.btn-ver-carta:hover {
+  background-color: rgba(237, 224, 200, 0.6);
+  color: #fdfdfd;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
    
     footer a {
