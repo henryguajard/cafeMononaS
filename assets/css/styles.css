@@ -5,6 +5,13 @@
   padding-top: 30px !important;
 }
 
+h1,h2{
+  color:#a87b1a;
+}
+h1{
+  font-size: medium;
+}
+
     nav {
       
   background-color: rgba(237, 224, 200, 0.7); /* Color con transparencia */
@@ -131,7 +138,9 @@
 
   /* Media query para móviles */
 @media (max-width: 768px) {
-
+h1{
+  display: none;
+}
 .btn-ver-carta {
     width: 100%;
     justify-content: center;
@@ -259,12 +268,13 @@
     footer a i {
       text-decoration: none;
       display: inline-block;
+      color: #a87b1a; 
     }
     footer {
         background-color: #E8DCC4!important;
     }
 
     footer a:hover i {
-      color: #a87b1a; 
+      color: #fdfdfd; 
       transition: color 0.3s ease;
     }
