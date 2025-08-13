@@ -36,3 +36,18 @@ document.querySelectorAll('.filtro-btn').forEach(btn => {
     btn.classList.add('active');
   });
 });
+
+ const toggler = document.querySelector('.custom-toggler');
+  const iconOpen = toggler.querySelector('.bi-list');
+  const iconClose = toggler.querySelector('.bi-x-lg');
+  const collapseMenu = document.getElementById('navbarContenido');
+
+  collapseMenu.addEventListener('show.bs.collapse', () => {
+    iconOpen.classList.add('d-none');
+    iconClose.classList.remove('d-none');
+  });
+
+  collapseMenu.addEventListener('hide.bs.collapse', () => {
+    iconOpen.classList.remove('d-none');
+    iconClose.classList.add('d-none');
+  });

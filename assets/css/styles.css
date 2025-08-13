@@ -20,6 +20,22 @@ h1{
   transition: background-color 0.3s ease;
 
     }
+.navbar-toggler {
+  outline: none;
+  box-shadow: none;
+  border-color: #a87b1a;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.25rem rgba(168, 123, 26, 0.5); /* sombra suave en tu color */
+}
+.custom-toggler .bi {
+  color: #a87b1a;
+  font-size: 1.5rem; /* Tamaño opcional, ajustable */
+  transition: color 0.3s ease;
+}
+
 
     nav .navRedes1{
       text-decoration: none !important;

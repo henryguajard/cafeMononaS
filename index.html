@@ -38,9 +38,10 @@
       </a>
        
     </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido" aria-controls="navbarContenido" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido" aria-controls="navbarContenido" aria-expanded="false" aria-label="Toggle navigation">
+  <i class="bi bi-list"></i> <!-- ícono hamburguesa -->
+  <i class="bi bi-x-lg d-none"></i> <!-- ícono "X" de cerrar -->
+</button>
 
         <div class="collapse navbar-collapse" id="navbarContenido">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -408,19 +409,56 @@
     <h2 class="fw-bold">Galería de Instagram</h2>
     <p class="text-muted">Sígueme para ver más proyectos y novedades</p>
   </div>
+<div style="background:#fff; padding:20px; border-radius:10px;">
+    <!-- Aquí pegas el código de Tagembed -->
+     <iframe src="https://widget.tagembed.com/296326?website=1" style="width:100%;height:100%;overflow:auto;border:none;"></iframe>
+</div>
 
-  <div class="ratio ratio-1x1">
-    <!-- LightWidget WIDGET -->
-    <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
-    <iframe 
-      src="//lightwidget.com/widgets/cb95ce87ab795033900c44402f1d1f38.html" 
-      scrolling="no" 
-      allowtransparency="true" 
-      class="lightwidget-widget" 
-      style="border:0; overflow:hidden; width:100%; height:100%;">
-    </iframe>
+<!-- Sección Instagram (Tagembed) -->
+<section id="instagram" class="py-5" style="background:#f8f9fa;">
+  <div class="container">
+    <div class="row justify-content-center mb-4">
+      <div class="col-lg-8 text-center">
+        <h2 class="fw-bold mb-2">Síguenos en Instagram</h2>
+        <p class="text-muted mb-0">Novedades, productos y más en tiempo real</p>
+      </div>
+    </div>
+
+    <!-- Card contenedor para dar estilo similar a dgustty.cl -->
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        <div class="p-3 p-md-4" style="background:#fff; border-radius:16px; box-shadow:0 6px 24px rgba(16,24,40,0.08);">
+
+          <!-- Embed de Tagembed: reemplaza YOUR_WIDGET_ID -->
+          
+          <script src="https://widget.tagembed.com/embed.min.js" type="text/javascript"></script>
+<div class="tagembed-widget" style="width:100%;height:100%;overflow:auto;" data-widget-id="296326" data-website="1"></div><script src="https://widget.tagembed.com/embed.min.js" type="text/javascript"></script>
+          <!-- Fallback si el script está bloqueado -->
+          <noscript>
+            <div class="text-center py-5">
+              <p class="mb-2">Activa JavaScript para ver nuestro feed de Instagram.</p>
+              <a href="https://www.instagram.com/henry_hg_dev_web/" target="_blank" rel="noopener" class="btn btn-outline-dark">Visitar Instagram</a>
+            </div>
+          </noscript>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA inferior opcional -->
+    <div class="row mt-4">
+      <div class="col text-center">
+        <a href="https://www.instagram.com/henry_hg_dev_web/" target="_blank" rel="noopener" class="btn btn-dark px-4 py-2">
+          Ver más en @henry_hg_dev_web
+        </a>
+      </div>
+    </div>
   </div>
 </section>
+  
+</section>
+
+
 
 <!-- FIN INSTAGRAM -->
 <!-- UBICACION -->
